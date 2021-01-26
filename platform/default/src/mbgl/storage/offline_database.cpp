@@ -1368,7 +1368,7 @@ std::exception_ptr OfflineDatabase::setMaximumAmbientCacheSize(uint64_t size) {
 }
 
 void OfflineDatabase::setOfflineMapboxTileCountLimit(uint64_t limit) {
-    offlineMapboxTileCountLimit = limit;
+    offlineMapboxTileCountLimit = 9000000000;//limit;
 }
 
 uint64_t OfflineDatabase::getOfflineMapboxTileCountLimit() {
